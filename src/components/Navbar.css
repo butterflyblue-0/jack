@@ -1,0 +1,92 @@
+/* General navbar container */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top row: dropdown and shop button */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Bottom row: nav links and logo */
+.navbar-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navbar-bottom a{
+  font-size: 18px;
+}
+
+/* Centered logo */
+.nav-center {
+  margin: 0 32px;
+}
+
+.logo {
+  width: 225px;
+  height: 139px;
+}
+
+/* Nav links styling */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid white;
+}
+
+/* Button styles */
+.shop-btn{
+     padding: 6px 18px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 106px;
+  height: 43px;
+}
+.dropdown-toggle {
+  padding: 6px 18px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 254px;
+  height: 43px;
+}
+
+.shop-btn:hover,
+.dropdown-toggle:hover {
+  background: #1a1a1a;
+}
+
+.arrow {
+  font-size: 10px;
+  margin-left: 6px;
+}

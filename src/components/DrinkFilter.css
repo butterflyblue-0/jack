@@ -1,0 +1,93 @@
+.drink-filter {
+  background: #000;
+  color: #fff;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.filter-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  appearance: none;
+  text-align: center;
+}
+
+.dropdown option {
+  background: #000;
+  color: #fff;
+}
+
+.tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 21px; /* vertical and horizontal spacing */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+
+/* .tag-button {
+  border: 1px solid #fff;
+  padding: 8px 18px;
+  border-radius: 32px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1;
+      padding-top: .25rem;
+      touch-action: pan-x pan-y pinch-zoom;
+ 
+} */
+
+.tag-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #fff;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.tag-button.active,
+.tag-button:hover {
+  background: #fff;
+  color: #000;
+}

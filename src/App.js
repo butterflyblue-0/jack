@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import CocktailIntro from './components/CocktailIntro';
+import CocktailCarousel from './components/CocktailCarousel';
+import DrinkFilter from './components/DrinkFilter';
+import DrinkCardGrid from './components/DrinkCardGrid';
+import cocktailData from './components/cocktailData'; // Adjust the path if needed
+import VisitDistillery from './components/VisitDistillery';
+import LimitedEdition from './components/LimitedEdition';
+import Footer from './components/Footer';
+import FooterLegal from './components/FooterLegal';
 
 function App() {
+  const [filters, setFilters] = useState({
+    product: 'PRODUCT',
+    occasion: 'OCCASION',
+    tags: [],
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <CocktailIntro />
+      <CocktailCarousel />
+      <DrinkFilter onFilterChange={setFilters} />
+      <DrinkCardGrid cocktails={cocktailData} filters={filters} />
+      <VisitDistillery/>
+      <LimitedEdition/>
+      <Footer/>
+      <FooterLegal/>
+    </>
   );
 }
 

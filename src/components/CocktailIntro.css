@@ -1,0 +1,29 @@
+.cocktail-intro {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 32px;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  color: #d0e9f5;
+  margin-bottom: 24px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.breadcrumb .active {
+  color: #ffffff;
+}
+
+.intro-heading {
+    display: flex;
+    justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 208px;
+  line-height: 185px;
+  font-family: "jdSerif", "jdSerif Fallback";
+  margin-top: 10px;
+}
